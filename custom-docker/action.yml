@@ -1,0 +1,17 @@
+# action.yml
+
+name: 'My Custom Action'
+description: 'A simple action that greets the user'
+author: 'Your Name'
+
+inputs:
+  name:
+    description: 'The name of the person to greet'
+    required: false
+    default: 'World'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.name }}
