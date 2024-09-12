@@ -1,4 +1,4 @@
-name: Test Custom Action
+name: Docker Custom Action
 
 on: [push]
 
