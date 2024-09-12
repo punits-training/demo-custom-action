@@ -1,0 +1,16 @@
+name: Test Custom Action
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Run custom action
+      uses: ./custom-docker
+      with:
+        name: 'Punit'
