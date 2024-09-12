@@ -1,0 +1,15 @@
+# .github/workflows/main.yml
+
+name: Composite Custom Action
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run composite action
+      uses: ./custom-composite
+      with:
+        name: 'Punit Shah'
