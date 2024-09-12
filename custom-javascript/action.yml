@@ -1,0 +1,14 @@
+# action.yml
+
+name: 'Custom JavaScript Action'
+description: 'A simple action that greets the user'
+author: 'Punit Shah'
+
+inputs:
+  name:
+    description: 'The name of the person to greet'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
