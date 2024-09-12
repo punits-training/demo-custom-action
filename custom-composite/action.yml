@@ -1,0 +1,29 @@
+# action.yml
+
+name: 'Composite Action'
+description: 'A simple composite action that prints a message and uses existing actions'
+author: 'Punit Shah'
+
+inputs:
+  name:
+    description: 'The name of the person to greet'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print hello message
+      run: echo "Hello, ${{ inputs.name }}!"
+
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Run a Node.js script
+      run: |
+        echo "console.log('Running a script for ${{ inputs.name }}!');" > script.js
+        node script.js
