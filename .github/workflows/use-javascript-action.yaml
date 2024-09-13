@@ -2,7 +2,8 @@
 
 name: Custom JavaScript Action
 
-on: [push]
+on: 
+  workflow_dispatch
 
 jobs:
   build:
