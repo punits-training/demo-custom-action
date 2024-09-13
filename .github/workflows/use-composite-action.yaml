@@ -2,7 +2,8 @@
 
 name: Composite Custom Action
 
-on: [push]
+on: 
+  workflow_dispatch
 
 jobs:
   build:
