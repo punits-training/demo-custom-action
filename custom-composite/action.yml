@@ -13,6 +13,7 @@ runs:
   using: "composite"
   steps:
     - name: Print hello message
+      shell: bash
       run: echo "Hello, ${{ inputs.name }}!"
 
     - name: Checkout repository
@@ -24,6 +25,7 @@ runs:
         node-version: '16'
 
     - name: Run a Node.js script
+      shell: bash
       run: |
         echo "console.log('Running a script for ${{ inputs.name }}!');" > script.js
         node script.js
