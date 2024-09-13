@@ -1,5 +1,5 @@
 # action.yml
-
+ 
 name: 'Composite Action'
 description: 'A simple composite action that prints a message and uses existing actions'
 author: 'Punit Shah'
