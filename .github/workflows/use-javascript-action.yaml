@@ -13,8 +13,9 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v3
       
-    - name: npm/yarn/pnpm install
-      uses: Jaid/action-npm-install@v1.2.4
+    - name: turbostart-npm
+      uses: clutchd/turbostart-npm@v3.0.1
+          
 
     - name: Run JavaScript action
       uses: ./custom-javascript
