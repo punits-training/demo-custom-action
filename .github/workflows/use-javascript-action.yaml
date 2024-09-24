@@ -12,6 +12,9 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
+
+    - run: |
+        npm install
       
     - name: Run JavaScript action
       uses: ./custom-javascript
