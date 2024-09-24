@@ -6,7 +6,7 @@ on:
 jobs:
   
   my-first-job-on-windows:
-      runs-on: PUNITS-WINDOWS
+      runs-on: PUNITS-LAPTOP
       steps:
       - name: Show Date on Windows
         shell: pwsh
