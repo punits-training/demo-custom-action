@@ -1,0 +1,13 @@
+name: Self Hosted Runner
+
+on:
+  workflow_dispatch
+
+jobs:
+  
+  my-first-job-on-windows:
+      runs-on: PUNITS-WINDOWS
+      steps:
+      - name: Show Date on Windows
+        shell: pwsh
+        run: Date
