@@ -13,10 +13,6 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v3
       
-    - name: turbostart-npm
-      uses: clutchd/turbostart-npm@v3.0.1
-          
-
     - name: Run JavaScript action
       uses: ./custom-javascript
       with:
